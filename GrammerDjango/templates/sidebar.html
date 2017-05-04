@@ -1,0 +1,57 @@
+{% if found_language %}
+    <!-- LANGUAGE -->
+    <li class="sub-menu">
+        <a href="javascript:;" >
+            <i class="fa fa-desktop"></i>
+            <span>{{ language.name }}</span>
+        </a>
+        <ul class="sub">
+            <li><a  href="{% url 'polls:language_detail' language.name %}">{{ language.name }}</a></li>
+        </ul>
+    </li>
+
+    <!-- LEVEL -->
+    <li class="sub-menu">
+        <a href="javascript:;" >
+            <i class="fa fa-desktop"></i>
+            <span>Levels</span>
+        </a>
+        <ul class="sub">
+            {% if levelLangs %}
+                {% for levelLang in levelLangs %}
+                    <li><a  href="{% url 'polls:topic_list' language.name levelLang.level.level %}">{{ levelLang.level.level }}</a></li>
+                {% endfor %}
+            {% else %}
+                    <li><a  href="">No levels yet</a></li>
+            {% endif %}
+        </ul>
+    </li>
+
+    <!-- RESOURCES -->
+    <li class="sub-menu">
+        <a href="" >
+            <i class="fa fa-desktop"></i>
+            <span>Resources by Dialect</span>
+        </a>
+        <ul class="sub">
+            <li><a  href="{% url 'polls:choose_dialect' language.name %}">Dialects list</a></li>
+            {% if dialects %}
+                {% for dialect in dialects %}
+                    <li><a  href="{% url 'polls:language_resources' language.name dialect.name %}">{{ dialect.name }}</a></li>
+                {% endfor %}
+            {% endif %}
+        </ul>
+    </li>
+
+    <!-- GLOSSARY -->
+    <li class="sub-menu">
+        <a href="javascript:;" >
+            <i class="fa fa-desktop"></i>
+            <span>Glossary</span>
+        </a>
+        <ul class="sub">
+            <li><a  href="{% url 'polls:glossary_detail' language.name %}">Enter glossary</a></li>
+        </ul>
+    </li>
+
+{% endif %}

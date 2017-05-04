@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load app_filters %}
+{% load app_tags %}
+
+{% block title %}{{language_name}}|Days of the Week{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1><a href="{% url 'polls:choose_dialect' language_name %}">{{ language_name }}</a>
+        <a href="{% url 'polls:language_resources' language_name dialect %}"> - {{ dialect }}</a>
+         - Days of the week
+    </h1>
+</div>
+
+<!-- DAYS OF THE WEEK -->
+<div class="showback">
+    <form class="form-horizontal style-form">
+        {% for day in days_of_the_week %}
+            <div class="form-group">
+                <label class="col-sm-2 col-sm-2 control-label">{{ day }}</label>
+                <div class="col-sm-5">
+                    <p class="form-control-static">{{ items|get_word:day }}</p>
+                </div>
+                <a href="{% url 'polls:days_resource_update' language_name dialect.name day %}"><button type="button" class="btn btn-primary">Edit</button></a>
+            </div>
+        {% endfor %}
+    </form>
+</div>
+
+{% endblock content %}

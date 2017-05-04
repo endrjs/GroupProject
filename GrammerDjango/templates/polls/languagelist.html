@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}{{language_name}}|{{topic_name}}{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Languages</h1>
+
+    {% if user.is_authenticated %}
+        <p>Please choose your department.</p>
+    {% else %}
+        <p>Please login.</p>
+    {% endif %}
+</div>
+
+    {% if language_list %}
+        <ul class="list-group">
+        {% for language in language_list %}
+            <a class="list-group-item" href="{% url 'polls:language_detail' language.name %}">{{ language.name }}</a>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <div class="alert alert-warning">There are no languages available.</div>
+    {% endif %}
+
+{% endblock content %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}{{language_name}}|Resources{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1>
+        <a href="{% url 'polls:choose_dialect' language_name %}">{{ language_name }}</a> - {{ dialect }}
+    </h1>
+</div>
+
+<!-- RESOURCES -->
+<div class="showback">
+    <h2><a href="{% url 'polls:resources_alphabet' language_name dialect %}">Alphabet</a></h2>
+
+    <h2><a href="{% url 'polls:resources_numbers' language_name dialect %}">Numbers</a></h2>
+
+    <h2><a href="{% url 'polls:resources_days' language_name dialect %}">Days</a></h2>
+
+    <h2><a href="{% url 'polls:resources_holidays' language_name dialect %}">Holidays</a></h2>
+
+    <h2><a href="{% url 'polls:resources_months' language_name dialect %}">Seasons and months</a></h2>
+
+    <h2><a href="{% url 'polls:resources_time' language_name dialect %}">Time</a></h2>
+</div>
+
+{% endblock content %}

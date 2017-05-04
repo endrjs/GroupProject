@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+{% load app_filters %}
+
+{% block title %}{{language_name}}|Seasons and Months{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+    <h1><a href="{% url 'polls:choose_dialect' language_name %}">{{ language_name }}</a>
+        <a href="{% url 'polls:language_resources' language_name dialect %}"> - {{ dialect }}</a>
+         - Seasons and months
+    </h1>
+</div>
+
+<!-- Edit name -->
+<div class="showback">
+    <form class="form-horizontal style-form">
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">Name in {{ language_name }}</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ resource.name_in_language }}">
+            </div>
+            <a href="{% url 'polls:resources_edit' language_name dialect.name 'Months' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+    </form>
+</div>
+
+<!-- SPRING -->
+<div class="showback">
+    <h2>Spring</h2>
+
+    <form class="form-horizontal style-form">
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">Spring</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'Spring'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'Spring' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">March</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'March'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'March' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">April</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'April'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'April' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">May</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'May'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'May' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+    </form>
+</div>
+
+<!-- SUMMER -->
+<div class="showback">
+    <h2>Summer</h2>
+
+    <form class="form-horizontal style-form">
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">Summer</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'Summer'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'Summer' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">June</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'June'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'June' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">July</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'July'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'July' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">August</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'August'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'August' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+    </form>
+</div>
+
+<!-- AUTUMN -->
+<div class="showback">
+    <h2>Autumn</h2>
+    <form class="form-horizontal style-form">
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">Autumn</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'Autumn'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'Autumn' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">September</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'September'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'September' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">October</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'October'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'October' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">November</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'November'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'November' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+    </form>
+</div>
+
+<!-- WINTER -->
+<div class="showback">
+<h2>Winter</h2>
+    <form class="form-horizontal style-form">
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">Winter</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'Winter'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'Winter' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">December</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'December'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'December' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">January</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'January'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'January' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 col-sm-2 control-label">February</label>
+            <div class="col-sm-5">
+                <input type="textlabel" class="form-control" placeholder="{{ items|get_word:'February'}}">
+            </div>
+            <a href="{% url 'polls:months_resource_update' language_name dialect.name 'February' %}"><button type="button" class="btn btn-primary">Edit</button></a>
+        </div>
+    </form>
+</div>
+
+
+{% endblock content %}

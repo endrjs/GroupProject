@@ -1,0 +1,18 @@
+{% extends "admin/base.html" %}
+{% load staticfiles %}
+
+{% block title %}Grammar App - Admin{% endblock %}
+
+{% block extrahead %}
+    <!-- ICON -->
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+{% endblock %}
+
+{% block branding %}
+<img src="{% static 'images/logo.png' %}" height="30px"/><br>
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Grammar App</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block footer %} PARAGON 2016 {% endblock footer %}

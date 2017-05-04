@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+<!-- JUMBOTRON -->
+
+
+<div class="page-header">
+  <h1>Dashboard</h1>
+</div>
+
+<!-- LANGUAGES -->
+<div class="showback">
+    <h4><i class="fa fa-angle-right"></i> Languages</h4>
+    {% if language_list %}
+        <ul class="list-group">
+        {% for language in language_list %}
+            <a class="list-group-item" href="{% url 'polls:language_detail' language.name %}">{{ language.name }}</a>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No languages are available.</p>
+    {% endif %}
+
+    {% if perms.polls.add_language %}
+    <a href="{% url 'polls:language_create' %}"><button type="button" class="btn btn-primary">Add language</button></a>
+    {% endif %}
+</div>
+
+{% if perms.polls.add_level %}
+<!-- LEVELS -->
+<div class="showback">
+    <h4><i class="fa fa-angle-right"></i> Levels</h4>
+    Click on a level below to see topics.
+
+    <ul class="list-group">
+    {% for level in levels %}
+        <a class="list-group-item" href="{% url 'polls:level_detail' level.level %}">{{ level.level }}</a>
+    {% endfor %}
+    </ul>
+
+    <a href="{% url 'polls:level_create' %}"><button type="button" class="btn btn-primary">Add level</button></a>
+</div>
+{% endif %}
+{% endblock content %}

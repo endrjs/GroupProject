@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.spanishgrammarapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LanguageActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".RecordingActivity"
+            android:label="Recording" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_learn" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LevelActivity"
+            android:label="@string/title_activity_learn" />
+        <activity
+            android:name=".LearnActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_learn" />
+        <activity
+            android:name=".PracticeActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_practice" />
+        <activity
+            android:name=".ReviseActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_revise" />
+        <activity
+            android:name=".ResourcesActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_resources" />
+        <activity
+            android:name=".GlossaryActivity"
+            android:label="@string/title_activity_glossary" />
+        <activity
+            android:name=".ExercisesActivity"
+            android:label="@string/title_activity_exercises" />
+        <activity
+            android:name=".SubtopicsActivity"
+            android:label="@string/title_activity_subtopics" />
+        <activity
+            android:name=".TopicActivity"
+            android:label="@string/title_activity_topics" />
+        <activity
+            android:name=".SituationalVideoActivity"
+            android:label="@string/title_activity_situational_video" />
+        <activity android:name=".resources.activities.AlphabetActivity" />
+        <activity android:name=".resources.activities.CalendarActivity" />
+        <activity android:name=".resources.activities.HolidaysActivity" />
+        <activity android:name=".resources.activities.HolidayInstanceActivity" />
+        <activity android:name=".resources.activities.SeasonsAndMonthsActivity" />
+        <activity android:name=".resources.activities.NumberActivity" />
+        <activity android:name=".resources.activities.DayActivity" />
+        <activity android:name=".resources.activities.DialectActivity" />
+        <activity
+            android:name=".GrammarVideoActivity"
+            android:label="@string/title_activity_grammar_video" />
+        <activity android:name=".ListeningComprehensionActivity" />
+        <activity
+            android:name=".ExerciseReview"
+            android:label="@string/title_activity_exercise_review"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExerciseSelector"
+            android:label="@string/title_activity_exercise_selector"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".CreditsActivity"
+            android:label="@string/title_activity_credits"></activity>
+    </application>
+
+</manifest>

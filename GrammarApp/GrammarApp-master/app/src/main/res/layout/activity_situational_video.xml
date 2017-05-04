@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Situational Video Page"/>
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="@string/activity_situational_video_with_transcript"
+        android:textOff="@string/activity_situational_video_without_transcript"
+        android:id="@+id/toggleButton_with_transcript"
+        android:layout_gravity="center_horizontal" />
+
+    <VideoView
+        android:id="@+id/vv_situational_video"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+</LinearLayout>

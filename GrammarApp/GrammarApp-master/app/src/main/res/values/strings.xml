@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Spanish Grammar App</string>
+
+    <string name="facebook_app_id">689134167895782</string>
+    <string name="learn">Learn</string>
+    <string name="practice">Practice</string>
+    <string name="revise">Revise</string>
+    <string name="resources">Resources</string>
+    <string name="glossary">Glossary</string>
+    <string name="credits">Credits</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_learn">LearnActivity</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_practice">PracticeActivity</string>
+    <string name="title_activity_revise">ReviseActivity</string>
+    <string name="title_activity_resources">ResourcesActivity</string>
+    <string name="title_activity_glossary">GlossaryActivity</string>
+    <string name="title_activity_login">Login</string>
+    <string name="alphabet">El Alfabeto</string>
+    <string name="numbers">Los Números</string>
+    <string name="days">Los Días</string>
+    <string name="calendar">El Calendario</string>
+    <string name="holidays">Festividades</string>
+    <string name="seasons_months">Estaciones y Meses</string>
+    <string name="time">La Hora</string>
+    <string name="creditsDialog">Credits</string>
+    <string name="title_activity_exercises">Exercises</string>
+    <string name="title_activity_subtopics">SubtopicsActivity</string>
+    <string name="title_activity_topics">Topics Activity</string>
+    <string name="title_activity_situational_video">Situational Video Activity</string>
+    <string name="title_activity_grammar_video">Grammar Video Activity</string>
+
+    <string name="subtitle_situational_video">Situational Video</string>
+    <string name="button_situational_video">Situational Video</string>
+    <string name="subtitle_subtopics">Grammar Topics and Vocabulary</string>
+
+    <string name="activity_situational_video_with_transcript">With Transcript</string>
+    <string name="activity_situational_video_without_transcript">Without Transcript</string>
+    <string name="title_activity_recording_tool">recording_tool</string>
+    <string name="playback">PlayBack</string>
+    <string name="finish">Finish Recording</string>
+    <string name="start">Start Recording</string>
+    <string name="stop">Stop Playback</string>
+    <string name="save">SAVE</string>
+    <string name="record">Record</string>
+    <string name="button_record">record</string>
+    <string name="title_activity_exercise_selector">Select exercise</string>
+    <string name="title_activity_exercise_review">ExerciseReview</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_credits">CreditsActivity</string>
+    <color name="creamyYellow">#FFD777</color>
+
+</resources>

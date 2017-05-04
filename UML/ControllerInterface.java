@@ -1,0 +1,66 @@
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Vector;
+
+public interface ControllerInterface
+{
+  public void addSkill(Skill oo);
+    public Skill createSkill(String skillIdx);
+  public void killSkill(Skill skillxx);
+  public void addStaff(Staff oo);
+    public Staff createStaff(String staffIdx);
+  public void killStaff(Staff staffxx);
+ public void setcompletes(Staff staffx,List completesxx);
+   public void addcompletes(Staff staffx,Assignment completesxx);
+   public void removecompletes(Staff staffx,Assignment completesxx);
+   public void sethas(Staff staffx,List hasxx);
+   public void addhas(Staff staffx,Skill hasxx);
+   public void removehas(Staff staffx,Skill hasxx);
+    public void addTask(Task oo);
+    public Task createTask(String taskIdx);
+  public void killTask(Task taskxx);
+ public void setneeds(Task taskx,List needsxx);
+   public void addneeds(Task taskx,Skill needsxx);
+   public void removeneeds(Task taskx,Skill needsxx);
+   public void setcompletes(Task taskx,List completesxx);
+   public void addcompletes(Task taskx,Assignment completesxx);
+   public void removecompletes(Task taskx,Assignment completesxx);
+   public void setdependsOn(Task taskx,List dependsOnxx);
+   public void adddependsOn(Task taskx,Task dependsOnxx);
+   public void removedependsOn(Task taskx,Task dependsOnxx);
+    public void addAssignment(Assignment oo);
+    public Assignment createAssignment(Staff assignedx,Task assignedTox);
+  public void killAssignment(Assignment assignmentxx);
+ public void setassigned(Assignment assignmentx,Staff assignedxx);
+ public void setassignedTo(Assignment assignmentx,Task assignedToxx);
+  public void addStory(Story oo);
+    public Story createStory(String storyIdx);
+  public void killStory(Story storyxx);
+ public void setsubtasks(Story storyx,List subtasksxx);
+   public void addsubtasks(Story storyx,Task subtasksxx);
+   public void removesubtasks(Story storyx,Task subtasksxx);
+    public void addSchedule(Schedule oo);
+    public Schedule createSchedule();
+  public void killSchedule(Schedule schedulexx);
+ public void setassigns(Schedule schedulex,List assignsxx);
+   public void addassigns(Schedule schedulex,Assignment assignsxx);
+   public void removeassigns(Schedule schedulex,Assignment assignsxx);
+   public void setsortedStaff(Schedule schedulex,List sortedStaffxx);
+   public void addsortedStaff(Schedule schedulex,Staff sortedStaffxx);
+   public void removesortedStaff(Schedule schedulex,Staff sortedStaffxx);
+   public void setsortedTasks(Schedule schedulex,List sortedTasksxx);
+   public void addsortedTasks(Schedule schedulex,Task sortedTasksxx);
+   public void removesortedTasks(Schedule schedulex,Task sortedTasksxx);
+    public void addAllocateStaff(AllocateStaff oo);
+    public AllocateStaff createAllocateStaff();
+  public void killAllocateStaff(AllocateStaff allocatestaffxx);
+  public void addDisplaySchedule(DisplaySchedule oo);
+    public DisplaySchedule createDisplaySchedule();
+  public void killDisplaySchedule(DisplaySchedule displayschedulexx);
+  public void addInit(Init oo);
+    public Init createInit();
+  public void killInit(Init initxx);
+}
+

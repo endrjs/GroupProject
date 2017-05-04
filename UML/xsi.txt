@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<My:model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI">
+<skills xsi:type="My:Skill" skillId="Java"  />
+<skills xsi:type="My:Skill" skillId="JSP"  />
+<skills xsi:type="My:Skill" skillId="C++"  />
+<staffs xsi:type="My:Staff" staffId="s1"  costDay="10"  completes = " //@assignments.0" hasMany = "" />
+<staffs xsi:type="My:Staff" staffId="s2"  costDay="10"  completes = " //@assignments.1" hasMany = "" />
+<staffs xsi:type="My:Staff" staffId="s3"  costDay="10"  completes = " //@assignments.2" hasMany = "" />
+<tasks xsi:type="My:Task" taskId="t1"  duration="10"  needsMany = "" completes = " //@assignments.0" subTask = "" superTask="//@tasks.-1" />
+<tasks xsi:type="My:Task" taskId="t2"  duration="10"  needsMany = "" completes = " //@assignments.1" subTask = "" superTask="//@tasks.-1" />
+<tasks xsi:type="My:Task" taskId="t3"  duration="10"  needsMany = "" completes = " //@assignments.2" subTask = "" superTask="//@tasks.-1" />
+<assignments xsi:type="My:Assignment" assigned="//@staffs.0" assignedTo="//@tasks.0" />
+<assignments xsi:type="My:Assignment" assigned="//@staffs.1" assignedTo="//@tasks.1" />
+<assignments xsi:type="My:Assignment" assigned="//@staffs.2" assignedTo="//@tasks.2" />
+</My:model>

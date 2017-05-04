@@ -1,0 +1,60 @@
+
+Use Case, name: allocateStaff
+Parameters: []
+Result type: null
+Superclass: null
+Description: 
+isIncremental: false
+isDerived: false
+isGeneric: false
+Attributes: 
+Operations: 
+Postcondition 0 is: t : sortedTasks & st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0 => Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns ) on [] owner Schedule
+
+complexity = 26
+
+Behaviour code: 
+
+Activity: 
+null
+
+
+Use Case, name: displaySchedule
+Parameters: []
+Result type: null
+Superclass: null
+Description: 
+isIncremental: false
+isDerived: false
+isGeneric: false
+Attributes: 
+Operations: 
+Postcondition 0 is: true => self->display() on [] owner Assignment
+
+complexity = 1
+
+Behaviour code: 
+
+Activity: 
+null
+
+
+Use Case, name: init
+Parameters: []
+Result type: null
+Superclass: null
+Description: 
+isIncremental: false
+isDerived: false
+isGeneric: false
+Attributes: 
+Operations: 
+Postcondition 0 is: true => sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration) on [] owner Schedule
+
+complexity = 12
+
+Behaviour code: 
+
+Activity: 
+null
+

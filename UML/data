@@ -1,0 +1,64 @@
+Entity:
+Story 182 121
+null  * 
+
+
+Entity:
+Task 550 136
+null  * 
+
+
+Entity:
+Staff 196 335
+null  * 
+
+
+Entity:
+Skill 530 350
+null  * 
+
+
+Entity:
+Schedule 220 536
+null  * 
+
+
+Entity:
+Assignment 645 564
+null  * 
+
+
+Association:
+Story Task 1 225 129 556 146 0  null 
+ordered 
+
+Association:
+Task Skill 1 571 152 560 353 0  null 
+
+
+Association:
+Staff Skill 1 239 348 534 361 0  null 
+
+
+Association:
+Assignment Staff 1 652 575 229 352 0  null 
+
+
+Entity:
+Class 1 736 140
+null  * 
+
+
+Entity:
+Class 2 987 149
+null  * 
+
+
+Association:
+Class 1 Class 2 0 793 144 996 150 0  null 
+
+
+Association:
+Class 2 Class 1 0 1000 165 784 158 0  null 
+
+

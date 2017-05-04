@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rulesbackground">
+
+    <Button
+        android:id="@+id/resume"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Resume"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#FFFF"
+        android:background="#FF40C381"
+        android:onClick="cancel"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/restartGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#FFFF"
+        android:background="#FF3599DB"
+        android:layout_below="@+id/resume"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#FFFF"
+        android:background="#FF3599DB"
+        android:layout_below="@+id/restartGame"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:onClick="quitGame"/>
+
+    <LinearLayout
+        android:layout_below="@+id/quit"
+        android:gravity="fill_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_alignRight="@+id/quit"
+        android:layout_alignLeft="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/linearLayout">
+
+        <ToggleButton
+            android:id="@+id/soundButton"
+            android:textOn=""
+            android:textOff=""
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:background="@drawable/soundoff" />
+
+        <ToggleButton
+            android:id="@+id/muteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOn = ""
+            android:textOff=""
+            android:checked = "true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toggle" />
+
+        <Button
+            android:id="@+id/ruleButton"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:onClick="newRule"
+            android:background="@drawable/rules" />
+
+    </LinearLayout>
+</RelativeLayout>

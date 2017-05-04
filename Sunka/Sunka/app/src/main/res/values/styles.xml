@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!-- Popup Theme for the Rules page, also shuts off the page when outside the box is touched.
+         Only supported by API level 8, so there is also exit button on screen.
+     -->
+    <style name="AppTheme.PopUpTheme">
+        <item name="android:windowIsTranslucent">true</item>
+      <item name="android:windowCloseOnTouchOutside" tools:targetApi="honeycomb">true</item>
+    </style>
+
+
+
+    <!-- Popup Menu on Gameboard, will show a bunch of settings available. -->
+    <style name="AppTheme.SettingTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+
+
+
+
+</resources>

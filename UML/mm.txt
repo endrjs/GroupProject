@@ -1,0 +1,732 @@
+Entity:
+Skill 424 82
+null  * 
+skillId String 3 false true false
+
+Entity:
+Staff 261 342
+null  * 
+staffId String 3 false true false costDay int 3 false false false
+
+Entity:
+Task 732 341
+null  * 
+taskId String 3 false true false duration int 3 false false false
+
+Entity:
+Assignment 592 525
+null  * 
+
+
+Operation:
+allocateStaff
+Assignment
+void
+
+
+true
+true
+
+
+Operation:
+toString
+Assignment
+String
+
+ query
+true
+result = assigned.staffId + " assigned to " + assignedTo.taskId
+
+
+Operation:
+cost
+Assignment
+int
+
+
+true
+true
+
+
+Entity:
+Story 1217 347
+null  * 
+storyId String 3 false true false
+
+Entity:
+Schedule 222 531
+null  * 
+totalCost int 3 false false false
+
+Operation:
+displaySchedule
+Schedule
+Sequence(null)
+
+ query
+true
+true
+
+
+Operation:
+calculateCost
+Schedule
+int
+
+ query
+true
+true
+
+
+Operation:
+sum
+Schedule
+int
+
+
+true
+true
+
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+Association:
+Task Skill 0 791 346 676 116 0 needs null 
+
+
+Association:
+Staff Assignment 1 516 394 595 527 0 completes assigned 
+
+
+Association:
+Task Assignment 1 732 393 687 526 0 completes assignedTo 
+
+
+Association:
+Staff Skill 0 262 344 428 117 0 has null 
+
+
+Association:
+Story Task 1 1219 366 982 369 0 subtasks null 
+ordered 
+
+Association:
+Task Task 1 980 387 851 388 0 dependsOn subTask 981 485 851 483 
+
+
+Association:
+Schedule Assignment 0 448 592 596 561 0 assigns null 
+ordered 
+
+Association:
+Schedule Staff 0 237 536 265 393 0 sortedStaff null 
+ordered 
+
+Association:
+Schedule Task 0 350 535 735 347 0 sortedTasks null 
+ordered 
+
+
+
+
+
+GeneralUseCase:
+allocateStaff 
+
+
+
+false
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+Constraint:
+t : sortedTasks
+st : sortedStaff & t.needs <: st.has & t.completes.size = 0 & st.completes.size = 0
+Assignment->exists( a | a.assignedTo = t & a.assigned = st & a : assigns )
+Schedule allocateStaff
+false
+
+
+
+Constraint:
+null
+true
+true
+null allocateStaff
+false
+
+
+
+
+
+
+
+GeneralUseCase:
+displaySchedule 
+
+
+
+false
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+Constraint:
+null
+true
+self->display()
+Assignment displaySchedule
+false
+
+
+
+
+
+
+
+GeneralUseCase:
+init 
+
+
+
+false
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+Constraint:
+null
+true
+sortedStaff = Staff->sortedBy(costDay) & sortedTasks = Task->sortedBy(-duration)
+Schedule init
+false
+
+
+
+
+
+
+
+GeneralUseCase:
+calculateCost 
+
+
+
+false
+
+
+Constraint:
+null
+true
+true
+null calculateCost
+false
+
+
+
+Constraint:
+null
+true
+true
+null calculateCost
+false
+
+
+

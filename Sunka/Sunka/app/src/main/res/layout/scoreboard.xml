@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundforall"
+    android:keepScreenOn="true">
+
+    <TextView
+        android:id="@+id/titleScoreboard"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Scoreboard"
+        android:textColor="#FF40C381"
+        android:layout_marginTop="30dp"
+        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/nextPlayer"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="GO Back"
+        android:textStyle="bold"
+        android:onClick="goBack"
+        android:background="#41c382" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/scoreboardData"
+        android:layout_below="@+id/titleScoreboard"
+        android:layout_alignLeft="@+id/backButton"
+        android:layout_alignStart="@+id/backButton"
+        android:layout_marginTop="49dp"
+        android:layout_alignRight="@+id/backButton"
+        android:layout_alignEnd="@+id/backButton" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This XML file contains the interface for rules. All the methods are implemented in
+    Rules.java class.
+
+    This page is pretty much complete. Please try and avoid changing any of the code.
+    However, please feel free to correct the grammar mistakes.
+
+    @author Damien Powell, Ka Chu, Gun Park, Maahnoor Khan & Zainab Khatun.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".rulespopup"
+    android:background="@drawable/rulesbackground"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/rulesTitle"
+            android:text="Rules"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="23dp"
+            android:textSize="40dp"
+            android:textColor="#3FC380"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginLeft="23dp"
+            android:textColor="#FFF"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rulescontent"
+            android:layout_below="@+id/rulesTitle"
+            android:id="@+id/textView" />
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/x" />
+    </RelativeLayout>
+</ScrollView>

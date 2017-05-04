@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ininja.sunka" >
+
+
+    <!-- Setting the application theme. -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- Loading Main Menu when application opens first. -->
+        <activity android:name="menu.MainMenu"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loading Player 1, once user clicks 'New Game' -->
+        <activity android:name="player_data.Player1">
+            <intent-filter>
+                <action android:name="android.intent.action.PLAYER1" />
+
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loading Player 2, once player clicks 'next' from player_1.xml -->
+        <activity android:name="player_data.Player2">
+            <intent-filter>
+                <action android:name="android.intent.action.PLAYER2" />
+
+                <action android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loads he loading screen of game files, within player_1.xml & player_2.xml -->
+
+
+        <!-- Opens the GameBoard once the player hits 'Let's Player' from player_2.xml file -->
+
+        <activity
+            android:name="game_data.Gameboard"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.GAMEBOARD"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Opens the Menu Settngs that is embedded into the Gameboard class -->
+        <activity
+            android:name="game_data.Settings"
+            android:theme="@style/AppTheme.SettingTheme"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MENUSETTINGS"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Loads the AI.java class -->
+        <activity
+            android:name="game_data.AIGameboard"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.AIGAMEBOARD"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Opens Rules Settings from the Settings Page -->
+
+
+        <activity
+            android:name="game_data.RulesMenu"
+            android:theme="@style/AppTheme.SettingTheme"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS"/>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- Continue Button, one's a game session which was paused. -->
+
+
+
+
+        <!-- Opens the Scoreboard which contains all the data gathered from previous games files -->
+
+        <activity android:name="menu.Scoreboard">
+            <intent-filter>
+                <action android:name="android.intent.action.SCORE" />
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+
+        <!-- Opens a overlayer popup screen from the MainMenu.java class. -->
+        <activity
+            android:name="menu.Rules"
+            android:theme="@style/AppTheme.PopUpTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.RULES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Allows access to external data storage -->
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>
